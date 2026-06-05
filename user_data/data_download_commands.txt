@@ -1,0 +1,32 @@
+1. Command: freqtrade list-exchanges
+   Description: Lists all the supported exchanges by Freqtrade.
+
+2. Command: freqtrade list-pairs --exchange binance --quote USDT
+   Description: Lists trading pairs available on the Binance exchange quoted in USDT.
+
+3. Command: freqtrade list-timeframes --exchange binance
+   Description: Lists the available timeframes for data collection on the Binance exchange.
+
+4. Command: freqtrade download-data -c user_data/config_binance_spot.json --timerange 20240401-20240501 -t 5m 1h
+   Description: Downloads historical spot market data from Binance for the specified timeframe (April 1, 2024, to May 1, 2024) in both 5-minute and 1-hour intervals.
+
+5. Command: freqtrade list-data -c user_data/config_binance_spot.json --show-timerange
+   Description: Lists the available data ranges for the downloaded spot market data from Binance.
+
+6. Command: freqtrade download-data -c user_data/config_binance_spot.json --timerange 20240401- -t 5m 1h
+   Description: Downloads historical spot market data from Binance starting from April 1, 2024, up to the latest available data, in both 5-minute and 1-hour intervals.
+
+7. Command: freqtrade download-data -c user_data/config_binance_spot.json --prepend --timerange 20240101-20240401 -t 5m 1h
+   Description: Prepends historical spot market data from Binance for the specified timeframe (January 1, 2024, to April 1, 2024) in both 5-minute and 1-hour intervals.
+
+8. Command: freqtrade download-data -c user_data/config_bybit_spot.json --timerange 20240401-20240501 -t 5m 1h
+   Description: Downloads historical spot market data from Bybit for the specified timeframe (April 1, 2024, to May 1, 2024) in both 5-minute and 1-hour intervals.
+
+9. Command: freqtrade download-data -c user_data/config_kucoin_spot.json --timerange 20240401-20240501 -t 5m 1h
+   Description: Downloads historical spot market data from KuCoin for the specified timeframe (April 1, 2024, to May 1, 2024) in both 5-minute and 1-hour intervals.
+
+10. Command: freqtrade list-pairs --exchange binance --quote USDT --trading-mode futures
+   Description: Lists trading pairs available on Binance futures market quoted in USDT.
+
+11. Command: freqtrade download-data -c user_data/config_binance_futures.json --timerange 20240401-20240501 -t 5m 1h
+    Description: Downloads historical futures market data from Binance for the specified timeframe (April 1, 2024, to May 1, 2024) in both 5-minute and 1-hour intervals.
